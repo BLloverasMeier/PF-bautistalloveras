@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+ 
+.navbar{
+    background-color: midnightblue;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+.navbar .logo{
+    width: 150px;
+    height: 150px;
+}
+
+.navbar .menu{
+    grid-column: 4 / 7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li{
+list-style: none;
+}
+
+.navbar .menu a{
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    cursor: pointer;
+}
+
+.navbar .menu a:hover{
+    color: white;
+}
+
+.navbar .menu-bar{
+    display: none;
+}
+
+.navbar .shoping {
+    grid-column: 8 / 9;
+}
+
+/*MAIN */
+
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(16, 16, 16, .8),rgba(16, 16, 16, .8)), url(/assets/img/fondok2.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.hero2{
+    height: 100vh;
+    background-image: linear-gradient(rgba(16, 16, 16, .8),rgba(16, 16, 16, .8)), url(/assets/img/fondonosotros.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+}
+.hero3{
+    height: 150vh;
+    background-image: linear-gradient(rgba(16, 16, 16, .8),rgba(16, 16, 16, .8)), url(/assets/img/drop.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+}
+
+.hero .info{
+    grid-column: 7 / 10;
+    grid-row: 3 / 7;
+    color: white;
+}
+
+.hero2 .info2{
+    grid-column: 7 / 10;
+    grid-row: 3 / 7;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.hero3 .info2{
+    grid-column: 7 / 10;
+    grid-row: 3 / 7;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero3 h3{
+    text-align: center;
+    font-family:sans-serif;
+    font-size: 6.5em;
+    font-weight: 900;
+}
+
+.hero h3{
+    font-family:sans-serif;
+    font-size: 6.5em;
+    font-weight: 900;
+}
+.hero2 h3{
+    font-family:sans-serif;
+    font-size: 6.5em;
+    font-weight: 900;
+}
+
+.hero h1{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.hero2 h1{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.hero .btn{
+    font-size: 1em;
+    background: none;
+    color: aliceblue;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.hero .btn:hover{
+    background-color: white;
+    color: black;
+}
+
+/*FOOTER */
+
+.footer{
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background-color: #181818;
+    color: #fff;
+    grid-template-areas: 
+    "chatea siguenos redes";
+}
+
+.footer h2{
+    color: rgb(0, 0, 0);
+}
+
+.footer .chatea{
+    grid-template-areas: chatea;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 17px;
+}
+
+.footer .chatea .fa-brands{
+    font-size: 2em;
+    margin-right: 20px;
+    color: black;
+}
+
+.footer .siguenos{
+    grid-template-areas: siguenos;
+    text-align: center;
+}
+
+.footer .siguenos h2{
+    color: white;
+}
+
+.footer .redes {
+    grid-template-areas: redes;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3em;
+    margin-left: 70px;
+}
+
+.footer .redes a{
+    text-decoration: none;
+    color: white;
+}
+
+/* PAGINA PRODUCTOS */
+
+.container {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+  
+  .card {
+    width: calc(23.33% - 10px);
+    margin: 10px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 20%;
+    height: 300px;
+    margin-bottom: 10px;
+    margin-left: 40%;
+    border-radius: 50px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .card2{
+    width: calc(23.33% - 10px);
+    margin: 10px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .card2 img {
+    max-width: 20%;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-left: 0%;
+    border-radius: 50px;
+  }
+
+  .card2 h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .card2 p {
+    margin-bottom: 20px;
+  }
+  
+
+
+@media only screen and (max-width: 990px){
+ .navbar .shoping{
+    display: none;
+ }
+
+ .navbar .menu-bar{
+    display: block;
+    grid-column: 8 / 9;
+    font-size: 2em;
+    cursor: pointer;
+ }
+
+ .hero .info {
+    grid-column: 2 / 10;
+    grid-row: 4 / 7;
+ }
+
+.footer .siguenos{
+    display: none;
+}
+
+.footer .redes {
+    text-align: center;
+}
+
+.card img{
+    height: 200px;
+}
+
+.footer .chatea{
+    padding: 18px;
+}
+
+.card2 img {
+    max-width: 20%;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-left: 0%;
+    border-radius: 50px;
+  }
+
+}
+
