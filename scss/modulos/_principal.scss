@@ -1,0 +1,108 @@
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .8)), url(../assets/img/fondok2.webp);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+    .info {
+        grid-column: 7 / 10;
+        grid-row: 3 / 7;
+        color: white;
+
+        @include laptop{
+            grid-column: 2 / 10;
+            grid-row: 4 / 7;
+        }
+
+        h3 {
+            font-family: sans-serif;
+            font-size: 6.5em;
+            font-weight: 900;
+
+            @include mobile{
+                font-size: 4.5em;
+            }
+        }
+
+        a {
+            .btn:hover {
+                font-size: 1em;
+                background: none;
+                color: aliceblue;
+                padding: 10px 20px;
+                border: 1px solid white;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+.footer {
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background-color: #181818;
+    color: #fff;
+    grid-template-areas:
+        "chatea siguenos redes";
+
+    .chatea {
+        grid-template-areas: chatea;
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+        padding: 10px;
+
+        @include laptop{
+            padding: 18px;
+        }
+
+        .fa-brands {
+            font-size: 2em;
+            margin-right: 20px;
+            color: black;
+        }
+
+        h2 {
+            color: rgb(8, 8, 8);
+        }
+    }
+
+    .siguenos {
+        grid-template-areas: siguenos;
+        text-align: center;
+
+        @include laptop{
+            display: none;
+        }
+
+        h2 {
+            color: white;
+        }
+    }
+
+    .redes {
+        grid-template-areas: redes;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.3em;
+        margin-right: 20px;
+
+        @include laptop{
+            text-align: center;
+        }
+
+        @include tablet{
+            display: flex;
+       justify-content: space-around;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
